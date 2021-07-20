@@ -1,0 +1,39 @@
+<template>
+  <button
+    class="px-2 py-1 m-1 font-semibold bg-gray-500 rounded-md text-light-100"
+    :class="getClass()"
+    @click="updateService()"
+  >
+    {{ service }}
+  </button>
+</template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/require-prop-types
+  props: ['service', 'activeservice', 'input'],
+  methods: {
+    updateService () {
+      this.$emit('input', this.toclass(this.service))
+    },
+    toclass (w) {
+      if (w === 'Pixiv Fanbox') { return 'fanbox' }
+      return w.toLowerCase().replace(' ', '_')
+    },
+    getClass () {
+      if (this.activeservice === this.toclass(this.service)) {
+        if (this.toclass(this.service) === 'all') {
+          return 'bg-green-700 probid'
+        }
+        return `bg-${this.toclass(this.service)} probid`
+      }
+    }
+  }
+}
+</script>
+
+<style>
+.probid {
+  pointer-events: none;
+}
+</style>

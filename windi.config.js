@@ -1,7 +1,6 @@
 import {
   defineConfig
 } from 'windicss/helpers'
-import colors from 'windicss/colors'
 import plugin from 'windicss/plugin'
 
 export default defineConfig({
@@ -16,10 +15,13 @@ export default defineConfig({
         '2xl': '1536px'
       },
       colors: {
-        gray: colors.coolGray,
-        blue: colors.lightBlue,
-        red: colors.rose,
-        pink: colors.fuchsia
+        patreon: '#fa5742',
+        fanbox: '#2c333c',
+        gumroad: '#2b9fa4',
+        subscribestar: '#009688',
+        discord: '#5165f6',
+        dlsite: '#052a83',
+        fantia: '#e1097f'
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
@@ -90,6 +92,7 @@ export default defineConfig({
           .createProperty('transform')
       }, variants('skew'))
     }),
+    require('@windicss/plugin-scrollbar'),
     require('windicss/plugin/filters'),
     require('windicss/plugin/forms'),
     require('windicss/plugin/aspect-ratio'),
@@ -97,5 +100,8 @@ export default defineConfig({
     require('windicss/plugin/typography')({
       modifiers: ['DEFAULT', 'sm', 'lg', 'red']
     })
-  ]
+  ],
+  shortcuts: {
+    'pagination-button': 'relative z-10 inline-flex items-center px-4 py-2 text-sm font-medium text-indigo-600 bg-indigo-50'
+  }
 })

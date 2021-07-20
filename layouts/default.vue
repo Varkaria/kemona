@@ -1,6 +1,29 @@
 <template>
   <div>
     <Navbar />
-    <nuxt />
+    <transition name="trans" mode="out-in">
+      <Nuxt />
+    </transition>
+    <footer class="flex justify-center w-full my-20 text-light-300">
+      <ul class="flex gap-2">
+        <li>
+          <a
+            href="https://github.com/OpenYiff"
+            target="_blank"
+            class="font-medium"
+          >Source code</a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </template>
+
+<script>
+export default {
+  head: {
+    bodyAttrs: {
+      class: 'flex flex-col h-screen bg-gray-900 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300 h-32 overflow-y-scroll'
+    }
+  }
+}
+</script>
