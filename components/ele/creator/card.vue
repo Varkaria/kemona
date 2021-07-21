@@ -1,12 +1,12 @@
 <template>
   <a
     class="p-5 bg-gray-700 shadow-lg gap-4 xl:rounded-lg flex gap-4 items-center transform transition-all hover:(scale-95 opacity-60 cursor-pointer)"
-    :style="`background: linear-gradient(rgb(31 41 55 / 80%), rgb(31 41 55)), url(https://api.varkaria.tech/kefull/banners/${creator.service}/${creator.id});`"
+    :style="`background: linear-gradient(rgb(31 41 55 / 80%), rgb(31 41 55)), url(https://api.varkaria.tech/kefull/banners/${creator.service}/${creator.id}?o=True);`"
     :href="`https://kemono.party/${creator.service}/user/${creator.id}`"
   >
     <img
       class="object-cover w-20 h-20 rounded-lg"
-      :src="`https://api.varkaria.tech/kefull/icons/${creator.service}/${creator.id}`"
+      :src="`https://api.varkaria.tech/kefull/icons/${creator.service}/${creator.id}?o=True`"
       :alt="creator.name"
       @error="$event.target.src = '/no-img.jpg'"
     >
