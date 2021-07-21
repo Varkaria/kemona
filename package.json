@@ -16,7 +16,8 @@
     "@nuxtjs/axios": "^5.13.6",
     "@windicss/plugin-scrollbar": "^1.2.3",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vue-progressive-image": "^3.2.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
