@@ -3,9 +3,10 @@
     <div class="header">
       <div
         class="relative px-4 py-12 mx-auto mt-4 overflow-hidden shadow-lg xl:rounded-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8"
-        style="background: linear-gradient(rgb(31 41 55 / 80%), rgb(31 41 55)), url(https://konachan.com/sample c9eee6bf0ec092e27cc28e4e7b2814b7/Konachan.com%20-%20329361%20sample.jpg);"
+        style="background: linear-gradient(rgb(31 41 55 / 80%), rgb(31 41 55)), url(/headers/artists.jpg);"
       >
-        <div class="flex grid items-center grid-cols-1 xl:grid-cols-2">
+        <div class="flex grid items-center grid-cols-1 transition-all xl:grid-cols-2"
+        v-bind:class="{ 'opacity-50 pointer-events-none': load }" >
           <div class="px-6">
             <h2
               class="mx-auto font-sans text-5xl font-light leading-none tracking-tight text-left text-gray-200 md:mx-auto"
@@ -57,12 +58,16 @@
     </div>
     <div v-if="load === false" class="mx-auto lg:max-w-screen-xl">
       <div
-        :class="`creators grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 transition-all max-w-screen-xl mx-auto gap-4 mt-4 transition-all load-${search.load}`"
+        :class="`creators grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 transition-all max-w-screen-xl mx-auto gap-4 mt-4 transition-all load-${search.load}`"
       >
         <EleCreatorCard v-for="(creator, i) in output" :key="i" :creator="creator" />
       </div>
+      <div v-if="output.length == 0">
+        <h1 class="text-4xl font-light text-center text-light-300">: (</h1>
+        <h2 class="mt-1 text-lg font-semibold text-center text-light-300">Coun't found any artists</h2>
+      </div>
     </div>
-    <div v-else-if="load === true" class="flex justify-center mt-4">
+    <div v-else class="flex justify-center mt-12">
       <div class="w-12 h-12 border-4 rounded-full border-white-600 loader" />
     </div>
   </div>

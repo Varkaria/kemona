@@ -23,9 +23,10 @@ export default {
     getClass () {
       if (this.activeservice === this.toclass(this.service)) {
         if (this.toclass(this.service) === 'all') {
-          return 'bg-green-700 probid'
+          return '!bg-green-700'
         }
-        return `bg-${this.toclass(this.service)} probid`
+        console.log('found selection')
+        return `!bg-${this.toclass(this.service)}`
       }
     }
   }
