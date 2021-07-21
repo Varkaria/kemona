@@ -5,7 +5,9 @@
     :href="`https://kemono.party/${creator.service}/user/${creator.id}`"
   >
     <img
-      class="object-cover w-20 h-20 rounded-lg"
+      class="object-cover rounded-lg"
+      width="80px"
+      height="80px"
       :src="`https://api.varkaria.tech/kefull/icons/${creator.service}/${creator.id}?o=True`"
       :alt="creator.name"
       @error="$event.target.src = '/no-img.jpg'"

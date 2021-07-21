@@ -7,7 +7,9 @@
           <div class="flex items-center flex-shrink-0">
             <NuxtLink to="/">
               <img
-                class="block w-auto h-8 rounded-lg"
+                class="block rounded-lg"
+                width="32px"
+                height="32px"
                 src="~/assets/logo.png"
                 alt="Kemono logo"
                 to="/"
