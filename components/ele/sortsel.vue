@@ -1,6 +1,6 @@
 <template>
   <button
-    class="px-2 py-1 m-1 font-semibold bg-gray-500 rounded-md text-light-100"
+    class="px-2 py-1 m-1 font-semibold bg-gray-500 rounded-md outline-none text-light-100 focus:outline-none"
     :class="getClass()"
     @click="updatesortby()"
   >
