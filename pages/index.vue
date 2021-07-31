@@ -1,7 +1,6 @@
 <template>
   <div id="index">
     <EleNews />
-
     <div class="header">
       <div
         class="relative px-4 py-8 mx-auto mt-4 overflow-hidden shadow-lg sm:py-16 lg:rounded-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
@@ -20,11 +19,11 @@
                 Kemono
               </h2>
               <p class="text-base text-gray-300 md:text-lg">
-                a scraper for Patreon, Pixiv Fanbox, SubscribeStar, Gumroad, Discord,
+                A scraper website for Patreon, Pixiv, Fanbox, SubscribeStar, Gumroad, Discord,
                 DLsite, and Fantia. Contributors here upload content from paywalls, and
-                share it here for easy searching and organization. To get started viewing
-                paywalled content, either search for creators on the [Artists] tab, or
-                search for content on the [Posts] tab.
+                share it here for an easy searching and organization. To get started viewing
+                paywalled content, either search for creators on the <b>Artists</b> tab, or
+                search for content on the <b>Posts</b> tab.
               </p>
             </div>
           </div>

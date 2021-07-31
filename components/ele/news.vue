@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="mx-auto mt-4 bg-blue-600 lg:rounded-lg md:max-w-full lg:max-w-screen-xl">
     <div class="px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex flex-wrap items-center justify-between">
@@ -23,7 +24,7 @@
           <p class="ml-3 font-medium text-white truncate">
             <span class="md:hidden"> We're looking for developers! </span>
             <span class="hidden md:inline">
-              if you have experience working with Python and/or HTML/CSS/Javascript.
+              If you have experience working with Python and/or HTML/CSS/Javascript.
               Contact the administrator at kemonoparty@protonmail.com if you are
               interested!
             </span>
@@ -32,4 +33,32 @@
       </div>
     </div>
   </div>
+  <div class="mx-auto mt-4 bg-pink-600 lg:rounded-lg md:max-w-full lg:max-w-screen-xl">
+    <div class="px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between">
+        <div class="flex items-center flex-1 w-0">
+          <span class="flex p-2 bg-pink-800 rounded-lg">
+            <svg 
+              class="h-6 w-6 text-white"
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 20 20" 
+              fill="currentColor" 
+              aria-hidden="true">
+              <path 
+                fill-rule="evenodd" 
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" 
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <p class="ml-3 font-medium text-white truncate">
+            <span class="md:hidden"> We're looking for developers! </span>
+            <span class="hidden md:inline">
+              Consider donating to help improve our infrastructure and avoid dependence on ad revenue!
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </template>

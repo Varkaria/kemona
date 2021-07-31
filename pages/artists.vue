@@ -13,12 +13,11 @@
             >
               Artists
             </h2>
-
             <div class="pt-0 mt-4">
               <input
                 v-model.trim="input"
                 type="text"
-                placeholder="Search users"
+                placeholder="Search artists"
                 class="relative w-full px-3 py-4 text-base text-gray-200 bg-gray-900 border-0 shadow outline-none xl:rounded bg-opacity-60 focus:outline-none focus:ring"
               >
             </div>
